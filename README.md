@@ -1,6 +1,4 @@
-# royal-commander
-
-
+Below is the translated and detailed specification document for developing a game similar to "Royal Revolt 2" using Unreal Engine 5. This includes the Game Design Document (GDD) and the Technical Specification Document.
 
 ## Game Design Document (GDD)
 
@@ -11,48 +9,42 @@
 - **Target Audience**: Gamers aged 13 and above
 
 ### 2. Gameplay
-- **Core Concept**: Players become kings, defending their own castles while attacking others. They gather resources to upgrade and strengthen their castles and soldiers, aiming to build the strongest castle.
+- **Basic Concept**: Players take on the role of a king, defending their castle while attacking other players' castles. They gather resources to upgrade and strengthen their castle and troops, aiming to build the strongest castle.
 - **Key Game Mechanics**:
   - **Castle Construction and Upgrades**: Players upgrade and strengthen their castle facilities.
-  - **Training and Deploying Soldiers**: Train soldiers and deploy them during battles.
-  - **Battles**: Attack other players' castles to steal resources.
-  - **Resource Management**: Produce money and bread in taverns and farms, and manage resources.
-  - **Card Deck Editing**: Character skills and soldier enhancements are managed through cards. The card deck editing screen is required from Phase 2 onwards.
+  - **Troop Training and Deployment**: Players train troops and deploy them during battles.
+  - **Battles**: Players attack other players' castles to steal resources.
+  - **Resource Management**: Players produce money and bread in taverns and farms to manage resources.
+  - **Card System**: Character skills and troop upgrades are managed through cards. A card deck editing screen is not required in Phase 1 but will be needed in Phase 2 and beyond.
 
 ### 3. Game Flow
-- **Tutorial**: A detailed tutorial at the start of the game teaches players basic operations and strategies.
-- **Castle Restoration**: Restore a dilapidated castle and upgrade its facilities.
-- **Battles**: Attack other players' castles to acquire resources.
-- **Upgrades**: Use acquired resources to upgrade the castle and soldiers.
-- **Card Deck Editing**: Use the card deck editing screen from Phase 2 onwards to manage character skills and soldier enhancements.
+- **Tutorial**: A comprehensive tutorial at the start of the game teaches players the basic controls and strategies.
+- **Castle Restoration**: Players restore a dilapidated castle and upgrade its facilities.
+- **Battles**: Players attack other players' castles to acquire resources.
+- **Upgrades**: Players use acquired resources to upgrade their castle and troops.
 
 ### 4. Characters and Units
 - **Player Character**: The King (controlled by the player)
-- **Types of Soldiers**: Start with a few types of soldiers, with more types unlocked as the training grounds are upgraded.
-- **Enemy Characters**: Soldiers and defense towers of other players
+- **Types of Troops**: Initially, players start with a few types of troops, with more types becoming available as the barracks are upgraded.
+- **Enemy Characters**: Troops and defense towers of other players
 
 ### 5. Level Design
-- **Castle Layout**: Players draw paths and set traps.
-- **Tower Placement**: Strategically place towers to prevent enemy advancement.
+- **Castle Layout**: Players draw paths and set traps with their fingers.
+- **Tower Placement**: Players strategically place towers to prevent enemy advancement.
 
 ### 6. Art Style
 - **Visual Theme**: Medieval Fantasy
 - **Color Customization**: Players can change the coloring of their equipment.
 
 ### 7. Sound Design
-- **Music**: Medieval-style background music
+- **Music**: Medieval-themed background music
 - **Sound Effects**: Battle sounds, construction sounds, resource collection sounds
 
-### 8. Card Deck Editing Screen
-- **Deck Construction**:
-  - **Number of Cards in Deck**: Players can choose the number of cards in their deck (e.g., 30, 40, 60).
-  - **Card Search**: Players can search for and select cards to add to their deck.
-  - **Drag & Drop**: Add or remove cards from the deck using drag and drop.
-  - **Regulation Check**: Function to check if the deck complies with game rules.
-  - **Deck Name and Sleeve Change**: Change the deck name and card sleeves (card back design).
-  - **Save and Load Decks**: Save edited decks and load them later.
+### 8. Monetization
+- **In-App Purchases**: Players can use real money to purchase items and resources within the game.
+- **Card Purchases**: Players can buy specific cards to enhance character skills and troop upgrades.
 
-## Technical Specifications
+## Technical Specification Document
 
 ### 1. Development Environment
 - **Game Engine**: Unreal Engine 5
@@ -72,21 +64,21 @@
 ### 3. Architecture
 - **Module Structure**:
   - **Core**: Basic game logic and data management
-  - **UI**: User interface
-  - **AI**: Enemy behavior patterns and soldier AI
+  - **UI**: User Interface
+  - **AI**: Enemy behavior patterns and troop AI
   - **Networking**: Multiplayer functionality
   - **Rendering**: Graphics rendering
 
 ### 4. Database
 - **Database Management System**: MySQL
 - **Data Model**:
-  - **Player Data**: User ID, castle status, resource amounts, types and numbers of soldiers
+  - **Player Data**: User ID, castle status, resource amounts, types and numbers of troops
   - **Battle Data**: Battle history, wins and losses, acquired resources
-  - **Card Data**: Card ID, card name, card effects, rarity
+  - **Card Data**: Types of cards, effects, ownership status
 
 ### 5. Network
 - **Communication Protocol**: TCP/IP
-- **Server**: Cloud server using AWS
+- **Server**: Cloud servers using AWS
 - **Security**: SSL/TLS encryption for communication
 
 ### 6. Test Plan
@@ -95,4 +87,4 @@
 - **Load Testing**: Testing server load capacity
 - **Usability Testing**: Testing player operability and game experience
 
----
+This specification document will enable engineers to quickly start the game development process.
